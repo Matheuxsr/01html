@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <center>
+        <h1>Aula de Formulário</h1>
+        <h2>Formulário visita a TOTVS</h2>
+        <form action="mailto: rochalirathiago@outlook.com" method="post">
+
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" required maxlength="50" minlength="3" id="nomeCompleto" name="nomeCompleto">
+            <br> <br>
+            <label for="cpf">CPF</label>
+            <input type="text" required minlength="11" maxlength="11" name="cpf" id="cpf">
+            <br> <br>
+            <label for="rg">RG</label>
+            <input type="text" minlength="8" maxlength="27" id="rg" name="rg">
+            <br> <br>
+            <p>De qual estado você virá?</p>
+            <label for="sp"> São Paulo</label>
+            <input type="radio" name="estado" id="sp">
+
+            <label for="mg"> Minas Gerais</label>
+            <input type="radio" name="estado" id="mg">
+
+            <label for="rj"> Rio de Janeiro</label>
+
+            <br>
+
+            <input type="radio" name="estado" id="rj">
+
+            <p>Método de transporte</p>
+            <label for="bumba"> Ônibus</label>
+            <input type="checkbox" name="transporte" id="bumba" value="Ônibus">
+            <br>
+
+            <label for="metro"> Metro</label>
+            <input type="checkbox" name="transporte" id="metro" value="Metro">
+            <br>
+
+            <label for="trem"> Trem</label>
+            <input type="checkbox" name="transporte" id="trem" value="Trem">
+            <br>
+
+            <label for="jegue"> Jegue</label>
+            <input type="checkbox" name="transporte" id="jegue" value="Jegue">
+            <br>
+
+            <label for="balsa"> Balsa</label>
+            <input type="checkbox" name="transporte" id="balsa" value="Balsa">
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </center>
+</body>
+
+</html>
