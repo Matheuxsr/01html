@@ -9,39 +9,44 @@
 
 <body>
     <form action="">
-        <p>Cárdapio Pastel & Cia</p>
 
-        <select name="" id="saborPastel">
-            <option value="pizza"> pizza</option>
-            <option value="queijo"> queijo</option>
-            <option value="bauru"> bauru</option>
-            <option value="nutella"> nutella</option>
-            <option value="frango/catupiry"> frango/catupiry</option>
-            <option value="brócolis"> brócolis</option>
-            <option value="especial"> especial</option>
-            <option value="calabresa"> calabresa</option>
-        </select>
+        <fieldset id="cardapio">
+            <legend> Seleção de sabores </legend>
+            <p>Cárdapio Pastel & Cia</p>
+            <select name="" id="saborPastel">
+                <option value="pizza"> pizza</option>
+                <option value="queijo"> queijo</option>
+                <option value="bauru"> bauru</option>
+                <option value="nutella"> nutella</option>
+                <option value="frango/catupiry"> frango/catupiry</option>
+                <option value="brócolis"> brócolis</option>
+                <option value="especial"> especial</option>
+                <option value="calabresa"> calabresa</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> Localidades </legend>
+            <p>Estamos expandindo nossas unidades, sugira sua cidade para considerar a abertura de novas unidades!
+            </p>
+                <datalist id="municípios">
+                    <option value="Jaragua"> Fim de mundo</option>
+                    <option value="Maua"> Pior da lista</option>
+                    <option value="Santo Andre"> De boa até</option>
+                    <option value="Sao Paulo"> 00 da lista</option>
+                    <option value="Moji"> Não fede, nem cheira</option>
+                    <option value="Caieiras"> Longe para um ***</option>
+                    <option value="Franco da Rocha"> Faço a menor ideia</option>
+                    <option value="Pirituba"> Legalzinho</option>
+                    <option value="Osasco"> Nem fala</option>
+                    <option value="Sao Jose dos Campos"> Ótima cidade</option>
+                </datalist>
 
-        <p>Estamos expandindo nossas unidades, sugira sua cidade para considerar a abertura de novas unidades!</p>
+                <label for="indicaMunicipio"> Insira seu município abaixo: </label>
+                <input type="text" autocomplete="on" list="municípios" name="indicaMunicipio" id="indicaMunicipio">
 
-        <datalist id="municípios">
-            <option value="Jaragua"> Fim de mundo</option>
-            <option value="Maua"> Pior da lista</option>
-            <option value="Santo Andre"> De boa até</option>
-            <option value="Sao Paulo"> 00 da lista</option>
-            <option value="Moji"> Não fede, nem cheira</option>
-            <option value="Caieiras"> Longe para um ***</option>
-            <option value="Franco da Rocha"> Faço a menor ideia</option>
-            <option value="Pirituba"> Legalzinho</option>
-            <option value="Osasco"> Nem fala</option>
-            <option value="Sao Jose dos Campos"> Ótima cidade</option>
-        </datalist>
-
-        <label for="indicaMunicipio"> Insira seu município abaixo: </label>
-        <input type="text" autocomplete="on" list="municípios" name="indicaMunicipio" id="indicaMunicipio">
-
-<input type="submit" value="enviar">
-
+                <input type="submit" value="enviar">
+            
+        </fieldset>
 
 </body>
 
